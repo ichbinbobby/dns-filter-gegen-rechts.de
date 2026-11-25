@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const listUrl = 'https://dns-filter-gegen-rechts.de/domains'
+const listUrl = new URL('/domains', useRequestURL()).href
 const copyStatus = ref<'idle' | 'copied' | 'failed'>('idle')
 
 useSeoMeta({
