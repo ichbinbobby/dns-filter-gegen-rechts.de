@@ -1,3 +1,36 @@
 # DNS-Filter gegen Rechts
 # Format: one domain per line
-# Status: list in preparation; no domains published yet
+# Scope: publisher domains, documented media impersonation and disinformation
+# hosts, observed ad/tracking hosts, and BILD's image host.
+# General cloud/CDN/media hosts and consent-management hosts are excluded.
+# BILD and WELT are Axel Springer brands; NIUS is published by VIUS SE & Co. KGaA.
+# Publisher sources:
+# https://www.axelspringer.com/en/brands
+# https://nius.de/impressum
+# Media impersonation reports:
+# https://www.mimikama.org/russische-medienfaelschungen-newsguard-2026/
+# https://www.newsguardtech.com/special-reports/media-imposter-tracking-center/
+# politico-24.com was reported inaccessible as of 2026-03-16.
+# Documented disinformation:
+# https://correctiv.org/faktencheck/hintergrund/2026/03/16/anonymous-news-prorussisch-und-rechtsextrem-internationales-netzwerk-bis-russland/
+# https://correctiv.org/faktencheck/2025/01/23/russische-einflussoperation-verbreitet-fake-artikel-zu-migrationsabkommen-mit-kenia/
+# https://dpa-factchecking.com/germany/250509-99-794769/
+# Current activity for presseneu.de and friedrich-merz-cdu.de was not confirmed.
+# Homepage resource references:
+# https://www.bild.de/
+# https://www.bild.de/video/mediathek/video/bild-live-71144736.bild.html
+# https://www.welt.de/
+# https://nius.de/
+adnz.co
+anonymousnews.org
+bfm-tv.net
+bild.de
+euronews.us.com
+friedrich-merz-cdu.de
+ib.adnxs-simple.com
+images.bild.de
+nius.de
+politico-24.com
+presseneu.de
+welt.de
+www.asadcdn.com

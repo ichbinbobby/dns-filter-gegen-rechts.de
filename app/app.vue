@@ -57,6 +57,7 @@ async function copyListUrl() {
       <nav class="main-nav" aria-label="Hauptnavigation">
         <a href="#liste">Die Liste</a>
         <a href="#prinzip">So funktioniert's</a>
+        <a href="#quellen">Quellen</a>
         <UButton to="#einbinden" class="nav-cta" color="neutral" variant="outline">Einbinden <span aria-hidden="true">↗</span></UButton>
       </nav>
     </header>
@@ -76,7 +77,7 @@ async function copyListUrl() {
           </div>
           <div class="hero-note">
             <span class="note-mark" aria-hidden="true">i</span>
-            <p>Die Liste ist noch im Aufbau und enthält aktuell <strong>keine Einträge.</strong></p>
+            <p>Die Liste enthält <strong>3 Verlagsdomains, 3 dokumentierte Medien-Imitate, 3 Desinformationsquellen, den BILD-Bildhost und 3 beobachtete Werbe-/Tracking-Hosts.</strong> Weitere Einträge werden sorgfältig geprüft.</p>
           </div>
         </div>
 
@@ -154,7 +155,7 @@ async function copyListUrl() {
             </div>
             <div class="list-status">
               <span class="status-ring"><span /></span>
-              <span><strong>In Vorbereitung</strong><small>Domains werden noch kuratiert</small></span>
+              <span><strong>Domains aufgenommen</strong><small>Verlagsdomains, Medien-Imitate, Desinformationsquellen, BILD-Bildhost und Werbe-/Tracking-Hosts</small></span>
             </div>
           </div>
           <div class="feed-card">
@@ -168,11 +169,11 @@ async function copyListUrl() {
               </UButton>
             </div>
             <div class="feed-card-footer">
-              <span><span class="tiny-dot" /> 0 Domains veröffentlicht</span>
+              <span><span class="tiny-dot" /> 13 Domains in der Liste</span>
               <a :href="listUrl" target="_blank" rel="noopener noreferrer">Liste öffnen <span aria-hidden="true">↗</span></a>
             </div>
           </div>
-          <p class="empty-list-note"><span aria-hidden="true">!</span> Die Liste ist noch leer. Bitte noch nicht in einen DNS-Filter eintragen.</p>
+          <p class="empty-list-note"><span aria-hidden="true">!</span> Drittanbieter-Einträge können auch andere Websites beeinflussen; die Subdomain-Abdeckung hängt vom DNS-Filter ab.</p>
         </div>
       </section>
 
@@ -207,6 +208,46 @@ async function copyListUrl() {
         </div>
       </section>
 
+      <section id="quellen" class="sources-section section-wrap">
+        <div class="section-kicker"><span>04</span> Recherche &amp; Quellen</div>
+        <div class="sources-heading">
+          <h2>Nachvollziehbar,<br><em>nicht willkürlich.</em></h2>
+          <p>Die Einträge beruhen auf dokumentierten Recherchen, Angaben der Verlage und beobachteten Ressourcen. Die Quellen belegen die Einordnung — nicht zwingend die aktuelle Erreichbarkeit jeder Domain.</p>
+        </div>
+        <div class="source-grid">
+          <article class="source-card">
+            <h3>Medien-Imitate</h3>
+            <p>Berichte zu nachgeahmten Nachrichtenmarken und den dokumentierten Domains.</p>
+            <ul>
+              <li><a href="https://www.mimikama.org/russische-medienfaelschungen-newsguard-2026/" target="_blank" rel="noopener noreferrer">Mimikama: Russische Medienfälschungen <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.newsguardtech.com/special-reports/media-imposter-tracking-center/" target="_blank" rel="noopener noreferrer">NewsGuard: Media Imposter Tracking Center <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </article>
+          <article class="source-card">
+            <h3>Desinformation</h3>
+            <p>Recherchen von CORRECTIV und DPA zu den aufgeführten Desinformationsseiten.</p>
+            <ul>
+              <li><a href="https://correctiv.org/faktencheck/hintergrund/2026/03/16/anonymous-news-prorussisch-und-rechtsextrem-internationales-netzwerk-bis-russland/" target="_blank" rel="noopener noreferrer">CORRECTIV: Anonymous News <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://correctiv.org/faktencheck/2025/01/23/russische-einflussoperation-verbreitet-fake-artikel-zu-migrationsabkommen-mit-kenia/" target="_blank" rel="noopener noreferrer">CORRECTIV: Fake-Artikel zu einem Migrationsabkommen <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://dpa-factchecking.com/germany/250509-99-794769/" target="_blank" rel="noopener noreferrer">DPA: Gefälschte Merz-Website <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </article>
+          <article class="source-card">
+            <h3>Verlage &amp; Ressourcen</h3>
+            <p>Angaben zur Verlagszugehörigkeit sowie Seiten, auf denen Ressourcen beobachtet wurden.</p>
+            <ul>
+              <li><a href="https://www.axelspringer.com/en/brands" target="_blank" rel="noopener noreferrer">Axel Springer: Marken <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://nius.de/impressum" target="_blank" rel="noopener noreferrer">NIUS: Impressum <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.bild.de/" target="_blank" rel="noopener noreferrer">BILD: Startseite <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.bild.de/video/mediathek/video/bild-live-71144736.bild.html" target="_blank" rel="noopener noreferrer">BILD: Videoseite <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://www.welt.de/" target="_blank" rel="noopener noreferrer">WELT: Startseite <span aria-hidden="true">↗</span></a></li>
+              <li><a href="https://nius.de/" target="_blank" rel="noopener noreferrer">NIUS: Startseite <span aria-hidden="true">↗</span></a></li>
+            </ul>
+          </article>
+        </div>
+        <p class="sources-caveat">Die aktuelle Aktivität von <code>politico-24.com</code>, <code>presseneu.de</code> und <code>friedrich-merz-cdu.de</code> wurde nicht bestätigt.</p>
+      </section>
+
       <section class="closing-section">
         <div class="closing-mark" aria-hidden="true">✳</div>
         <p>Das Netz gehört uns allen.</p>
@@ -227,6 +268,7 @@ async function copyListUrl() {
       </a>
       <p>Ein offenes Projekt für ein Netz mit Haltung.</p>
       <div class="footer-links">
+        <a class="footer-source" href="#quellen">Quellen</a>
         <a class="footer-source" href="https://github.com/ichbinbobby/dns-filter-gegen-rechts.de" target="_blank" rel="noopener noreferrer">Quellcode auf GitHub ↗</a>
         <a class="footer-top" href="#start">Nach oben ↑</a>
       </div>
@@ -399,6 +441,21 @@ button { font: inherit; }
 .device-card p { margin: 8px 0 17px; color: #7a8077; font-size: 11px; line-height: 1.6; }
 .device-label { color: #879283; font-size: 8px; font-weight: 700; letter-spacing: .1em; }
 
+.sources-section { padding-top: 92px; padding-bottom: 96px; }
+.sources-heading { display: flex; justify-content: space-between; align-items: end; gap: 60px; margin-top: 27px; }
+.sources-heading h2 { margin: 0; font-size: clamp(39px, 4vw, 55px); }
+.sources-heading > p { max-width: 430px; margin: 0 0 7px; color: #70776e; font-size: 13px; line-height: 1.8; }
+.source-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 39px; }
+.source-card { padding: 22px; border: 1px solid #e1e3da; background: #f8f8f4; }
+.source-card h3 { margin: 0; font-size: 14px; font-weight: 700; }
+.source-card p { margin: 9px 0 15px; color: #7a8077; font-size: 11px; line-height: 1.65; }
+.source-card ul { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; }
+.source-card a { color: #46574a; font-size: 10px; font-weight: 600; line-height: 1.5; }
+.source-card a:hover { color: #577c59; }
+.source-card a span { padding-left: 3px; white-space: nowrap; }
+.sources-caveat { margin: 17px 0 0; color: #7a8077; font-size: 10px; line-height: 1.6; }
+.sources-caveat code { font-family: inherit; color: #4e5e4d; }
+
 .closing-section { padding: 72px 24px 78px; color: #f2f4ed; text-align: center; background: #748a70; }
 .closing-mark { color: #d2dec9; font-size: 22px; }
 .closing-section > p { margin: 11px 0 0; color: #d8e0d4; font-size: 11px; letter-spacing: .08em; }
@@ -470,6 +527,12 @@ button { font: inherit; }
   .device-card { min-height: auto; padding: 19px; }
   .device-icon { margin-bottom: 13px; }
   .device-card p { margin-bottom: 13px; }
+  .sources-section { padding-top: 75px; padding-bottom: 78px; }
+  .sources-heading { display: block; margin-top: 22px; }
+  .sources-heading h2 { font-size: 42px; }
+  .sources-heading > p { margin-top: 19px; font-size: 12px; }
+  .source-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 27px; }
+  .source-card { padding: 19px; }
   .closing-section { padding: 58px 18px 62px; }
   .closing-section h2 { font-size: 39px; }
   .site-footer { min-height: 105px; grid-template-columns: 1fr auto; gap: 5px 12px; }
