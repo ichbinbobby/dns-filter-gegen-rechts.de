@@ -1,0 +1,3 @@
+# DNS-Filter gegen Rechts
+# Format: one domain per line
+# Status: list in preparation; no domains published yet
